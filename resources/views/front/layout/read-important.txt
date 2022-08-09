@@ -1,0 +1,14 @@
+Home = Aquí va el contenido dinámico de la página, es decir todo lo que se encuentra
+debajo de (menos master), se carga en home
+
+Master = Contenido del cuerpo dinámico del html, carga el header, head, footer y home.
+
+News = Contenido principal de la página de inicio, muestra las publicaciones más recientes.
+pagination = Es opcional, es la paginación de los contenidos, es mejor usar usar pagination de bootstrap incrustado en laravel.
+Single = Plantilla de contenido amplio de la publicacion clickeada en el news
+Head = Contenido del encabezado, se carga el js, css, título.
+header = Contenido del encabezado del html, links a contenido multimedia, barra de búsqueda y sección de logueo
+Most - Popular = Pontenido de obtención de las publicaciones más vistas, más buscadas o más comunes.
+Tags = Contenido de todas las etiquetas, una búsqueda rápida del contenido con esa etiqueta.
+
+*** Cada sección tiene su controlador correspondiente.
