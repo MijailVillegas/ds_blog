@@ -15,8 +15,8 @@ return [
     */
 
     'title' => '',
-    'title_prefix' => '',
-    'title_postfix' => ' | Diagnosis Estudios',
+    'title_prefix' => 'Diagnosis Publisher |',
+    'title_postfix' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Diag</b>Admin',
+    'logo' => '<b>Diag</b>Publisher',
     'logo_img' => 'vendor/adminlte/dist/img/Logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -66,8 +66,8 @@ return [
 
     'usermenu_enabled' => true,
     'usermenu_header' => true,
-    'usermenu_header_class' => 'bg-primary',
-    'usermenu_image' => true,
+    'usermenu_header_class' => 'bg-lightblue',
+    'usermenu_image' => false,
     'usermenu_desc' => true,
     'usermenu_profile_url' => true,
 
@@ -122,12 +122,12 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => 'bg-secondary',
+    'classes_brand' => 'bg-lightblue',
     'classes_brand_text' => '',
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-lightblue elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -151,7 +151,7 @@ return [
     'sidebar_collapse_remember' => false,
     'sidebar_collapse_remember_no_transition' => true,
     'sidebar_scrollbar_theme' => 'os-theme-light',
-    'sidebar_scrollbar_auto_hide' => 'l',
+    'sidebar_scrollbar_auto_hide' => '',
     'sidebar_nav_accordion' => true,
     'sidebar_nav_animation_speed' => 300,
 
@@ -249,23 +249,28 @@ return [
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => '/dashboard',
+            'url'         => '/admin',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'user/profile',
+            'text' => 'Cuentas',
             'icon' => 'fas fa-fw fa-user',
+            'submenu' => [
+                [
+                    'text' => 'Perfil',
+                    'url'  => 'user/profile',
+                ],
+            ],
         ],
         [
-            'text' => 'change_password',
+            'text' => 'Publicaciones',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        [
+/*         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -302,7 +307,7 @@ return [
                     'url'  => '#',
                 ],
             ],
-        ],
+        ], */
         ['header' => 'labels'],
         [
             'text'       => 'important',
