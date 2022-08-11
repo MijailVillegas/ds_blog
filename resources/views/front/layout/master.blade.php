@@ -4,6 +4,25 @@
     @include('front.layout.head')
 </head>
 <body>
+    <style>
+        /* Esta parte fuerza al scroll  */
+        ::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(60, 141, 188);
+}
+    </style>
 @include('front.layout.header')
 @include('front.layout.header-fluid')
 
